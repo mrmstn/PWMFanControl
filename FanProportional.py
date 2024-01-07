@@ -14,7 +14,7 @@ IO.setup(14,IO.OUT)            # Initialize GPIO14 as our fan output pin
 fan = IO.PWM(14,100)           # Set GPIO14 as a PWM output, with 100Hz frequency (this should match your fans specified PWM frequency)
 fan.start(0)                   # Generate a PWM signal with a 0% duty cycle (fan off)
 
-minTemp = 25                   # Temperature and speed range variables, edit these to adjust max and min temperatures and speeds
+minTemp = 40                   # Temperature and speed range variables, edit these to adjust max and min temperatures and speeds
 maxTemp = 80
 minSpeed = 0
 maxSpeed = 100
